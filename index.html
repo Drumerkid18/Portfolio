@@ -14,6 +14,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
@@ -30,6 +31,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link href="whack-a-mole.html" rel="import" class="whack">
+    <link href="national-parks.html" rel="import" class="national">
+    <link href="address-book.html" rel="import" class="address">
+    <link href="todo-list.html" rel="import" class="todo">
+    <link href="insure-joy.html" rel="import" class="insure">
+    <link href="future.html" rel="import" class="future">
 
 </head>
 
@@ -143,7 +151,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/whack1.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Whack-A-Mole</h4>
@@ -157,7 +165,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/national1.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>National Parks</h4>
@@ -171,7 +179,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/todo1.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Todo List</h4>
@@ -185,12 +193,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/address1.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Address Book</h4>
                         <p class="text-muted">Database (MySQL) Practice</p>
-                        <p class="text-muted"></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -200,7 +207,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/insure1.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Insure Joy</h4>
@@ -214,7 +221,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/future1.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Future</h4>
@@ -473,15 +480,25 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Whack-A-Mole</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p class="item-intro text-muted">A game of speed and focus!</p>
+                            <div id="container1" class="sliderbox">  
+                            <script>
+                                var link = document.querySelector('.whack');
+                                console.log(link);
+
+                                // Clone the <template> in the import.
+                                var template = link.import.querySelector('template');
+                                var clone = document.importNode(template.content, true);
+
+                                document.querySelector('#container1').appendChild(clone);
+                            </script>
+                            </div>
+                            <p>I was given the assignment to create a game where an image would appear and disappear in a matter of moments whether the user clicked on it or not. For this I used jQuery, CSS, PHP, HTML, Javascript. I kinda went a little overboard and had a total of 36 moles, and they fired off at random times, like the real game, it wasn't predictable or easy at all. I also randomized the images that would display for added fun. I created a start page and each game lasted 1 minute. At the end it would tally your score. I had a lot of fun with this project and added a lot of personality to it.</p>
                             <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: January 2015</li>
+                                <li>Client: Codeup Bootcamp</li>
+                                <li>Category: Jquery Practice, and everything else we had already learned up to this point.</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -505,10 +522,24 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>National Parks</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <p class="item-intro text-muted">A list of some of the Nations Parks</p>
+                            <div id="container2" class="sliderbox">  
+                            <script>
+                                var link = document.querySelector('.national');
+
+                                // Clone the <template> in the import.
+                                var template = link.import.querySelector('template');
+                                var clone = document.importNode(template.content, true);
+
+                                document.querySelector('#container2').appendChild(clone);
+                            </script> 
+                            </div>                           
+                            <p>This was a fun project, it taught us how to use a database. A huge component in everyday websites. On this project we seeded data, and also uploaded new data using a form. I enjoyed the new material and found it exciting to include the pagination feature. Once again I went above and beyond on this. The number of pages displayed is directly related to the number of parks in the database. Also the pages showing depends on which page you are on.</p>
+                            <ul class="list-inline">
+                                <li>Date: January 2015</li>
+                                <li>Client: Codeup Bootcamp</li>
+                                <li>Category:MySQL practice and everything else we had covered up to this point.</li>
+                            </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -532,10 +563,24 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Todo List</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <p class="item-intro text-muted">Simple List of Items ToDo</p>
+                            <div id="container3" class="sliderbox">  
+                            <script>
+                                var link = document.querySelector('.todo');
+
+                                // Clone the <template> in the import.
+                                var template = link.import.querySelector('template');
+                                var clone = document.importNode(template.content, true);
+
+                                document.querySelector('#container3').appendChild(clone);
+                            </script>
+                            </div>
+                            <p>This project also to learn about MySQL and saving to the database. We implemented a delete feature on this project, and a marked completed feature. I used FontAwesome Icons for this. This project also has pagination, and a limit per page of items to display.</p>
+                            <ul class="list-inline">
+                                <li>Date: January 2015</li>
+                                <li>Client: Codeup Bootcamp</li>
+                                <li>Category:MySQL practice and everything else we had covered up to this point.</li>
+                            </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -559,10 +604,26 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Address Book</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <p class="item-intro text-muted">Place for storing addresses!</p>
+                            <div id="container4" class="sliderbox">  
+                            <script>
+                                var link = document.querySelector('.address');
+                                console.log(link);
+
+
+                                // Clone the <template> in the import.
+                                var template = link.import.querySelector('template');
+                                var clone = document.importNode(template.content, true);
+
+                                document.querySelector('#container4').appendChild(clone);
+                            </script>
+                            </div>
+                            <p>This project took a little longer, because it covered a lot of different things. We implemented adding a contact, an address, and phone number. We have all the states pre-saved to avoid any strange input by the user. You can add a new contact, edit the contact, delete the contact, add 1 or more addresses to that contact and delete those as well.</p>
+                            <ul class="list-inline">
+                                <li>Date: January 2015</li>
+                                <li>Client: Codeup Bootcamp</li>
+                                <li>Category:MySQL practice, jQuery events, CSS styling, PHP, and everything else we had covered.</li>
+                            </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -586,10 +647,19 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Insure Joy</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <p class="item-intro text-muted">My biggest Project</p>
+                            <div id="container5" class="sliderbox">  
+                            <script>
+                                var link = document.querySelector('.insure');
+
+                                // Clone the <template> in the import.
+                                var template = link.import.querySelector('template');
+                                var clone = document.importNode(template.content, true);
+
+                                document.querySelector('#container5').appendChild(clone);
+                            </script>
+                            </div>
+                            <p>This was the final project we completed as a team. It was a Web Application for purchasing Life Insurance. Built using Laravel, PHP, MySQL, JavaScript, jQuery, Twitter Bootstrap, Dropzone.js. Version control using Git and GitHub. Features user logins, creating user, saving quotes, saving applications, admin/company dashboard, profile/user dashboard, 3rd party integration, upload files, forgot password, contact messaging. This could very easily become a business or used for a broker who wants online presence.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -613,10 +683,20 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Future</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <p class="item-intro text-muted">My plans for the Future!</p>
+                            <div id="container6" class="sliderbox">  
+                            <script>
+                                var link = document.querySelector('.future');
+                                console.log(link);
+
+                                // Clone the <template> in the import.
+                                var template = link.import.querySelector('template');
+                                var clone = document.importNode(template.content, true);
+
+                                document.querySelector('#container6').appendChild(clone);
+                            </script>
+                            </div>                            
+                            <p>I would love to learn these languages and continue to grow as a I go along. My first goal is to get more work with what I know. These are some of the languages I see are needed and is why I want to learn them.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -642,6 +722,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- Slider -->
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
 
 </body>
 

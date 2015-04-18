@@ -785,6 +785,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content p {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -864,4 +865,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+.sliderbox{
+    margin-left: 65px;
+    width: 600px;
 }
